@@ -16,10 +16,10 @@ const SideBar = () => {
       <Link to="/stock-received" className="p-2 hover:bg-gray-100 rounded-lg">
         <FaBox className="w-6 h-6 text-gray-600" />
       </Link>
-      <Link to="/update-stock" className="p-2 hover:bg-gray-100 rounded-lg">
+      <Link to="/pickingandpacking" className="p-2 hover:bg-gray-100 rounded-lg">
         <FaTruck className="w-6 h-6 text-gray-600" />
       </Link>
-      <Link to="/notify-manager" className="p-2 hover:bg-gray-100 rounded-lg">
+      <Link to="/dispatch-management" className="p-2 hover:bg-gray-100 rounded-lg">
         <FaCreditCard className="w-6 h-6 text-gray-600" />
       </Link>
       <button className="p-2 hover:bg-gray-100 rounded-lg">

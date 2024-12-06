@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import SideBar from './components/SideBar';
 import Dashboard from './pages/Dashboard';
 import StockReceived from './pages/StockReceived';
+import PickingAndPacking from './pages/PickingAndPacking';
+import DispatchManagement from './pages/DispatchManagement';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/stock-received" element={<StockReceived />} />
+          <Route path="/pickingandpacking" element={<PickingAndPacking />} />
+          <Route path="/dispatch-management" element={<DispatchManagement/>} />
         </Routes>
       </div>
     </div>

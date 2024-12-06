@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import StockReceived from './StockReceived'; 
-import UpdateStockForm from '../components/ModuleOne/UpdateStockForm'; 
-import NotifyManagerForm from '../components/ModuleOne/NotifyManagerForm'; 
-import ReceivedItemsForm from '../components/ModuleOne/ReceivedItemsForm';
+import PickingAndPacking from './PickingAndPacking';
+import DispatchManagement from './DispatchManagement';
 
 export default function Dashboard() {
   const [time, setTime] = useState(new Date());
@@ -44,10 +43,18 @@ export default function Dashboard() {
               </div>
             </div>
           } />
+
+          {/* Module 1 */}
           <Route path="/stock-received" element={<StockReceived />} />
-          <Route path="/received-items" element={<ReceivedItemsForm />} />
-          <Route path="/update-stock" element={<UpdateStockForm />} />
-          <Route path="/notify-manager" element={<NotifyManagerForm />} />
+          <Route path="/pickingandpacking" element={<PickingAndPacking />} />
+          <Route path="/dispatch-management" element={<DispatchManagement />} />
+
+
+          {/* Module 2 */}
+          
+
+          {/* Module 3 */}
+
         </Routes>
       </div>
     </div>
