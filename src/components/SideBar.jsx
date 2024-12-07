@@ -14,7 +14,7 @@ const Sidebar = () => {
       {/* Menu Toggle Button */}
       <button 
         onClick={toggleSidebar}
-        className="fixed top-4 left-5 z-50 bg-black p-2 rounded-lg transition-all duration-300 hover:bg-gray-800"
+        className="fixed top-4 left-5 z-50 bg-gray-600 p-2 rounded-lg transition-all duration-300 hover:bg-gray-800"
       >
         <FaBars className="w-6 h-6 text-white" />
       </button>
