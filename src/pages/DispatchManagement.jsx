@@ -12,6 +12,18 @@ function DispatchManagement() {
         <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
             {/* Navigation Buttons */}
             <div className="flex flex-wrap gap-3 mb-6">
+
+            <button
+                    onClick={() => setSelectedForm('schedule')}
+                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
+                        selectedForm === 'schedule'
+                            ? 'bg-black text-white'
+                            : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                    }`}
+                >
+                    Schedule Dispatches
+                </button>
+
                 <button
                     onClick={() => setSelectedForm('confirm')}
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
@@ -22,6 +34,20 @@ function DispatchManagement() {
                 >
                 Career Details
                 </button>
+
+
+                <button
+                    onClick={() => setSelectedForm('record')}
+                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
+                        selectedForm === 'record'
+                            ? 'bg-black text-white'
+                            : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                    }`}
+                >
+                    Record Shipments
+                </button>
+                
+
                 <button
                     onClick={() => setSelectedForm('status')}
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
@@ -42,26 +68,8 @@ function DispatchManagement() {
                 >
                     Notify Customers
                 </button>
-                <button
-                    onClick={() => setSelectedForm('record')}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
-                        selectedForm === 'record'
-                            ? 'bg-black text-white'
-                            : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-                    }`}
-                >
-                    Record Shipments
-                </button>
-                <button
-                    onClick={() => setSelectedForm('schedule')}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
-                        selectedForm === 'schedule'
-                            ? 'bg-black text-white'
-                            : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-                    }`}
-                >
-                    Schedule Dispatches
-                </button>
+ 
+
             </div>
 
             {/* Forms */}
