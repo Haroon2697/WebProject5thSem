@@ -4,6 +4,7 @@ import StockReceived from './StockReceived';
 import PickingAndPacking from './PickingAndPacking';
 import DispatchManagement from './DispatchManagement';
 import Inventory from './Inventory';
+import EquipmentManagement from './EquipmentManagement';
 
 export default function Dashboard() {
   const [time, setTime] = useState(new Date());
@@ -53,6 +54,7 @@ export default function Dashboard() {
           <Route path="/pickingandpacking" element={<PickingAndPacking />} />
           <Route path="/dispatch-management" element={<DispatchManagement />} />
           <Route path="/inventory" element={<Inventory />} />
+          <Route path ="/equipment-management" element={<EquipmentManagement />} />
         </Routes>
       </div>
     </div>

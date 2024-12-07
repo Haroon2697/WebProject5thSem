@@ -3,48 +3,51 @@ import React from 'react'
 export default function MarkOrders() {
   return (
     
-      <div className="bg-white rounded-lg shadow">
-        <div className="p-6">
-          <h1 className="text-2xl font-semibold mb-6">Orders Ready for Dispatch</h1>
-          <div className="overflow-x-auto">
-            <table className="w-full">
+    <div className="p-6 bg-gray-100 min-h-screen">
+
+
+      <div className="bg-white p-6 rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold mb-6">Orders Ready for Dispatch</h2>
+      <div className="mb-6">
+      <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
               <thead>
-                <tr className="border-b">
-                  <th className="text-left p-3">Order ID</th>
-                  <th className="text-left p-3">Customer Name</th>
-                  <th className="text-left p-3">Items</th>
-                  <th className="text-left p-3">Quantity</th>
-                  <th className="text-left p-3">Dispatch Date</th>
-                  <th className="text-left p-3">Status</th>
-                  <th className="text-left p-3">Last Login</th>
-                  <th className="text-left p-3">Actions</th>
+                <tr >
+                  <th className="border border-gray-300 p-2 bg-gray-50 text-left">Order ID</th>
+                  <th className="border border-gray-300 p-2 bg-gray-50 text-left">Customer Name</th>
+                  <th className="border border-gray-300 p-2 bg-gray-50 text-left">Items</th>
+                  <th className="border border-gray-300 p-2 bg-gray-50 text-left">Quantity</th>
+                  <th className="border border-gray-300 p-2 bg-gray-50 text-left">Dispatch Date</th>
+                  <th className="border border-gray-300 p-2 bg-gray-50 text-left">Status</th>
+                  <th className="border border-gray-300 p-2 bg-gray-50 text-left">Last Login</th>
+                  <th className="border border-gray-300 p-2 bg-gray-50 text-left">Actions</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b">
-                  <td className="p-3">12345</td>
-                  <td className="p-3">Khizar Shahid</td>
-                  <td className="p-3">Laptop</td>
-                  <td className="p-3">2</td>
-                  <td className="p-3">2024-11-23</td>
-                  <td className="p-3">Ready for Dispatch</td>
-                  <td className="p-3"></td>
-                  <td className="p-3">
-                    <button className="text-blue-600 hover:text-blue-800">
-                      Print Slip
+                <tr >
+                  <td className="border border-gray-300 p-2">12345</td>
+                  <td className="border border-gray-300 p-2">Khizar Shahid</td>
+                  <td className="border border-gray-300 p-2">Laptop</td>
+                  <td className="border border-gray-300 p-2">2</td>
+                  <td className="border border-gray-300 p-2">2024-11-23</td>
+                  <td className="border border-gray-300 p-2">Ready for Dispatch</td>
+                  <td className="border border-gray-300 p-2"></td>
+                  <td className="border border-gray-300 p-2">
+                  <button className="text-black hover:text-gray-800">
+                  Print Slip
                     </button>
                   </td>
                 </tr>
-                <tr className="border-b">
-                  <td className="p-3">3467</td>
-                  <td className="p-3">Zaid Shahid</td>
-                  <td className="p-3">Phone</td>
-                  <td className="p-3">3</td>
-                  <td className="p-3">2024-09-12</td>
-                  <td className="p-3">Ready for Dispatch</td>
-                  <td className="p-3"></td>
-                  <td className="p-3">
-                    <button className="text-blue-600 hover:text-blue-800">
+                <tr >
+                  <td className="border border-gray-300 p-2">3467</td>
+                  <td className="border border-gray-300 p-2">Zaid Shahid</td>
+                  <td className="border border-gray-300 p-2">Phone</td>
+                  <td className="border border-gray-300 p-2">3</td>
+                  <td className="border border-gray-300 p-2">2024-09-12</td>
+                  <td className="border border-gray-300 p-2">Ready for Dispatch</td>
+                  <td className="border border-gray-300 p-2"></td>
+                  <td className="border border-gray-300 p-2">
+                    <button className="text-black hover:text-gray-800">
                       Print Slip
                     </button>
                   </td>
@@ -54,7 +57,7 @@ export default function MarkOrders() {
           </div>
         </div>
       </div>
-    
+    </div>
   )
 }
 
