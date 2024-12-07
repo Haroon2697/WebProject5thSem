@@ -11,7 +11,7 @@ function DispatchManagement() {
     return (
         <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
             {/* Navigation Buttons */}
-            <div className="flex flex-wrap gap-3 mb-6">
+            <div className="flex flex-wrap gap-3 mb-6 pl-6">
 
             <button
                     onClick={() => setSelectedForm('schedule')}
@@ -73,11 +73,14 @@ function DispatchManagement() {
             </div>
 
             {/* Forms */}
+            <div className="max-w-5xl bg-white rounded-lg shadow-md p-6 md:p-8">
+
             {selectedForm === 'confirm' && <ConfirmCareerDetails />}
             {selectedForm === 'status' && <DelieveryStatus />}
             {selectedForm === 'notify' && <NotifyCustomers />}
             {selectedForm === 'record' && <RecordShipments />}
             {selectedForm === 'schedule' && <ScheduleDispatches />}
+            </div>
         </div>
     );
 }

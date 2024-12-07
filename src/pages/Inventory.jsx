@@ -11,7 +11,7 @@ function Inventory() {
   return (
     <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
       {/* Navigation Buttons */}
-      <div className="flex flex-wrap gap-3 mb-6">
+      <div className="flex flex-wrap gap-3 mb-6 pl-6 ">
         <button
           onClick={() => setSelectedForm('cycle-count')}
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
@@ -71,7 +71,7 @@ function Inventory() {
       </div>
 
       {/* Form Section */}
-      <div className="mt-6">
+
         {selectedForm === 'cycle-count' && <CycleCounts />}
         {selectedForm === 'record-discrepancies' && <RecordDiscrepancies />}
         {selectedForm === 'update-stock-records' && <UpdateStockRecords />}
@@ -79,7 +79,7 @@ function Inventory() {
         {selectedForm === 'count-issues' && <CountIssues />}
         
       
-      </div>
+      
     </div>
   );
 }

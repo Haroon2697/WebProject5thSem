@@ -11,7 +11,7 @@ function EquipmentManagement() {
   return (
     <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
       {/* Navigation Buttons */}
-      <div className="flex flex-wrap gap-3 mb-6">
+      <div className="flex flex-wrap gap-3 mb-6 pl-6">
         <button
           onClick={() => setSelectedForm('log-equipment')}
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
@@ -72,7 +72,7 @@ function EquipmentManagement() {
       </div>
 
       {/* Form Section */}
-      <div className="mt-6">
+      <div className="mt-6 p-0">
         {selectedForm === 'log-equipment' && <LogEquipmentUse />}
         {selectedForm === 'replace-faulty' && <ReplaceFaultyEquipment />}
         {selectedForm === 'report-damages' && <ReportDamages />}

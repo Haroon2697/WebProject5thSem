@@ -16,12 +16,12 @@ const Sidebar = () => {
         onClick={toggleSidebar}
         className="fixed top-4 left-5 z-50 bg-gray-600 p-2 rounded-lg transition-all duration-300 hover:bg-gray-800"
       >
-        <FaBars className="w-6 h-6 text-white" />
+        <FaBars className="w-4 h-4 text-white" />
       </button>
 
       {/* Sidebar */}
       <div 
-        className={`fixed top-0 left-0 h-full w-20 bg-white border-r border-gray-200 transition-transform duration-300 z-40 ${
+        className={`fixed top-0 -left-1 h-full w-20 bg-white border-r border-gray-200 transition-transform duration-300 z-40 ${
           isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
         }`}
       >
