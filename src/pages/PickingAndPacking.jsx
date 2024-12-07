@@ -6,7 +6,7 @@ import PackingErrors from '../components/ModuleTwo/PackingErrors';
 import PrintSlips from '../components/ModuleTwo/PrintSlips';
 
 function PickingAndPacking() {
-    const [selectedForm, setSelectedForm] = useState('scan'); // Default to 'scan'
+    const [selectedForm, setSelectedForm] = useState('confirm'); // Default to 'scan'
 
     return (
         <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
@@ -15,7 +15,7 @@ function PickingAndPacking() {
                 <button 
                     onClick={() => setSelectedForm('confirm')} 
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
-                        selectedForm === 'scan' 
+                        selectedForm === 'confirm' 
                             ? 'bg-black text-white' 
                             : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
                     }`}
