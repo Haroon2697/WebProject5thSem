@@ -12,6 +12,18 @@ function PickingAndPacking() {
         <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
             {/* Navigation Buttons */}
             <div className="flex flex-wrap gap-3 mb-6">
+
+            <button 
+                    onClick={() => setSelectedForm('pick')} 
+                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
+                        selectedForm === 'pick' 
+                            ? 'bg-black text-white' 
+                            : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                    }`}
+                >
+                    Pick Items
+                </button>
+
                 <button 
                     onClick={() => setSelectedForm('confirm')} 
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
@@ -22,16 +34,7 @@ function PickingAndPacking() {
                 >
                     Confirm Items
                 </button>
-                <button 
-                    onClick={() => setSelectedForm('pick')} 
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
-                        selectedForm === 'pick' 
-                            ? 'bg-black text-white' 
-                            : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-                    }`}
-                >
-                    Pick Items
-                </button>
+
                 <button 
                     onClick={() => setSelectedForm('mark')} 
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ease-in-out ${
