@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import StockReceived from './pages/StockReceived';
 import PickingAndPacking from './pages/PickingAndPacking';
 import DispatchManagement from './pages/DispatchManagement';
+import Inventory from './pages/Inventory';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/stock-received" element={<StockReceived />} />
           <Route path="/pickingandpacking" element={<PickingAndPacking />} />
           <Route path="/dispatch-management" element={<DispatchManagement/>} />
+          <Route path="/inventory" element={<Inventory/>} />
         </Routes>
       </div>
     </div>

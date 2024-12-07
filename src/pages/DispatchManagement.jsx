@@ -6,7 +6,7 @@ import RecordShipments from '../components/ModuleThree/RecordShipments';
 import ScheduleDispatches from '../components/ModuleThree/ScheduleDispatches';
 
 function DispatchManagement() {
-    const [selectedForm, setSelectedForm] = useState('confirm'); // Default to 'confirm'
+    const [selectedForm, setSelectedForm] = useState('schedule'); // Default to 'confirm'
 
     return (
         <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
@@ -46,7 +46,7 @@ function DispatchManagement() {
                 >
                     Record Shipments
                 </button>
-                
+
 
                 <button
                     onClick={() => setSelectedForm('status')}

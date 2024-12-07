@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import StockReceived from './StockReceived'; 
 import PickingAndPacking from './PickingAndPacking';
 import DispatchManagement from './DispatchManagement';
+import Inventory from './Inventory';
 
 export default function Dashboard() {
   const [time, setTime] = useState(new Date());
@@ -51,6 +52,7 @@ export default function Dashboard() {
           <Route path="/stock-received" element={<StockReceived />} />
           <Route path="/pickingandpacking" element={<PickingAndPacking />} />
           <Route path="/dispatch-management" element={<DispatchManagement />} />
+          <Route path="/inventory" element={<Inventory />} />
         </Routes>
       </div>
     </div>
